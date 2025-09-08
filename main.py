@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Bot sozlamalari (Environment Variables dan)
 BOT_TOKEN = os.environ.get('8287305861:AAFIr9EMGefgYfav1pmSg8USHk_rn9VQm2I')
-WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
+WEBHOOK_URL = os.environ.get('cargo.railway.internal')
 ADMIN_IDS = [151222479,]
 
 if os.environ.get('ADMIN_IDS'):
@@ -362,3 +362,4 @@ if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
 
     app.run(host='0.0.0.0', port=port, debug=False)
+
