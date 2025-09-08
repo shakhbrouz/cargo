@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Bot sozlamalari (Environment Variables dan)
-BOT_TOKEN = os.environ.get('7782454356:AAET7vyNmwrdExSdm-ykw49lq0wQzzXIObIs')
+BOT_TOKEN = os.environ.get('8287305861:AAFIr9EMGefgYfav1pmSg8USHk_rn9VQm2I')
 WEBHOOK_URL = os.environ.get('WEBHOOK_URL')
 ADMIN_IDS = [151222479,]
 
@@ -360,4 +360,5 @@ if __name__ == '__main__':
     
     # Railway automatically sets PORT
     port = int(os.environ.get('PORT', 5000))
+
     app.run(host='0.0.0.0', port=port, debug=False)
